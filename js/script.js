@@ -118,11 +118,11 @@ const playersInput = function(input) {
         }
     }
     const checkIfWin = function() {
-        if(word.toUpperCase === wordInProgress.innerText){
+        if(word.toUpperCase() === wordInProgress.innerText){
             message.classList.add("win");
             message.innerHTML = `<p class="highlight">You guessed correct the word! Congrats!</p>`;
             startOver();
-        }
+        } 
     };
 
     const startOver = function () {
